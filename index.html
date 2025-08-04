@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNG to JPG Converter</title>
+    <meta name="description" content="Free online tool to convert PNG images to JPG format">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>PNG to JPG Converter</h1>
+            <p class="subtitle">Convert your PNG images to JPG format in seconds</p>
+        </header>
+
+
+        <div class="converter-card">
+            <form id="converter-form">
+                <div class="file-upload" id="drop-area">
+                    <div class="icon-container">
+                        <ion-icon name="images-outline" class="upload-icon"></ion-icon>
+                    </div>
+                    <p>Drag & drop your PNG file here or click to browse</p>
+                    <input type="file" id="file-input" class="file-input" accept=".png" required>
+                    <button type="button" class="btn" id="browse-btn">Select File</button>
+                </div>
+
+                <div class="preview" id="preview">
+                    <h3>Preview</h3>
+                    <img id="preview-image" src="#" alt="Preview">
+                </div>
+
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                    <p>Converting image...</p>
+                </div>
+
+                <div class="btn-container">
+                    <button type="submit" class="btn convert-btn" id="convert-btn" disabled>Convert to JPG</button>
+                </div>
+
+                <div class="result" id="result">
+                    <h3>Conversion Complete!</h3>
+                    <button type="button" class="btn download-btn" id="download-btn">Download JPG</button>
+                </div>
+            </form>
+        </div>
+
+        <footer>
+            <p>&copy; <span id="year"></span> PNG to JPG Converter. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>~
